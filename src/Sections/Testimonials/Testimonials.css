@@ -1,0 +1,55 @@
+.Testimonials {
+  background-color: var(--alt-color);
+}
+.Testimonials .Testimonials_cont {
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+}
+@media (max-width: 991px) {
+  .Testimonials .Testimonials_cont {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .Testimonials .Testimonials_cont {
+    width: 100%;
+  }
+}
+.Testimonials .Testimonials_cont .test {
+  padding: 0 30px;
+}
+@media (max-width: 767px) {
+  .Testimonials .Testimonials_cont .test {
+    padding: 10px;
+  }
+}
+.Testimonials .Testimonials_cont .test .test_text {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  color: #444;
+}
+.Testimonials .Testimonials_cont .test .test_info {
+  display: flex;
+  gap: 15px;
+}
+.Testimonials .Testimonials_cont .test .test_info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Testimonials .Testimonials_cont .test .test_info .test_info_name {
+  color: #666;
+  font-weight: 500;
+}
+.Testimonials .Testimonials_cont .test .test_info .test_info_name p {
+  color: #666;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--main-color);
+}/*# sourceMappingURL=Testimonials.css.map */

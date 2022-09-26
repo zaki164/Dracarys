@@ -1,0 +1,23 @@
+.summary {
+  background-color: var(--bg-dark2);
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.summary p {
+  position: absolute;
+  margin-top: 50px;
+  user-select: none;
+  transition: var(--main-transition);
+  width: 100%;
+}
+.summary p.active {
+  margin-top: 0;
+}
+.summary p a, .summary p span {
+  color: var(--main-color) !important;
+  cursor: pointer;
+}/*# sourceMappingURL=Summary.css.map */

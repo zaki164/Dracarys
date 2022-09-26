@@ -1,0 +1,133 @@
+@import '../../mixins';
+.Product {
+  padding-top: 100px !important;
+  .Product_image_holder {
+    max-height: 570px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .product_info {
+    .cat {
+      font-size: 25px;
+      font-weight: 800;
+      color: #555;
+      @include media(sm) {
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+    .name {
+      color: var(--main-color);
+      font-size: 28px;
+      font-weight: 800;
+      @include media(sm) {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+    .rating {
+      color: #666;
+      font-weight: 600;
+      font-size: 17px;
+      transition: var(--main-transition);
+      &:hover {
+        color: #222;
+      }
+      span {
+        color: var(--main-color);
+        font-size: 22px;
+        margin-left: 10px;
+      }
+      svg {
+        color: var(--main-color);
+        font-size: 22px;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-weight: 600;
+      font-size: 17px;
+      .currentPrice{
+        color: #666;
+        transition: var(--main-transition);
+        &:hover {
+          color: #222;
+        }
+      }
+      .oldprice {
+        text-decoration: line-through;
+        color: var(--main-color);
+      }
+    }
+    .text {
+      color: #666;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+    .fav {
+      color: #333;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--main-transition);
+      font-size: 30px;
+      cursor: pointer;
+      svg {
+        color: var(--main-color);
+      }
+    }
+    .linkstochart {
+      .addtochart {
+        border: 1px solid #ccc;
+        color: var(--main-color);
+        margin: 15px 0;
+        padding: 15px 20px;
+        width: fit-content;
+        border-radius: 10px;
+        transition: var(--main-transition);
+        font-weight: 600;
+        background-color: var(--alt-color);
+        &:hover {
+          background-color: var(--main-color);
+          color: #fff;
+          border-color: var(--main-color);
+        }
+      }
+      .gotochart {
+        margin: 15px 0;
+        font-weight: 600;
+        border-radius: 10px;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .backtopro {
+      border: 1px solid #ccc;
+      color: var(--main-color);
+      margin: 15px 0;
+      padding: 15px 20px;
+      width: fit-content;
+      border-radius: 10px;
+      transition: var(--main-transition);
+      font-weight: 600;
+      background-color: var(--alt-color);
+      &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+        border-color: var(--main-color);
+      }
+    }
+  }
+}

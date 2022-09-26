@@ -1,0 +1,170 @@
+.Favourite {
+  padding-top: 100px !important;
+}
+.Favourite .favItem {
+  display: flex;
+  align-content: center;
+  padding: 10px;
+  margin: auto;
+  width: 70%;
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(13, 12, 13, 0.2);
+  transition: var(--main-transition);
+}
+.Favourite .favItem:hover {
+  box-shadow: 0 0 20px var(--main-color);
+}
+@media (max-width: 991px) {
+  .Favourite .favItem {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .Favourite .favItem {
+    flex-direction: column;
+  }
+}
+.Favourite .favItem .favItem_remove {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.Favourite .favItem .favItem_remove svg {
+  color: var(--main-color);
+  font-size: 25px;
+}
+.Favourite .favItem .favItem_image {
+  flex: 1;
+}
+.Favourite .favItem .favItem_image img {
+  max-width: 100%;
+  max-height: 270px;
+  object-fit: cover;
+}
+.Favourite .favItem .favItem_info {
+  text-align: center;
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .Favourite .favItem .favItem_info {
+    margin-top: 10px;
+  }
+}
+.Favourite .favItem .favItem_info .name {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .Favourite .favItem .favItem_info .name {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+  }
+}
+.Favourite .favItem .favItem_info .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.Favourite .favItem .favItem_info .price .currentPrice {
+  color: #666;
+  transition: var(--main-transition);
+}
+.Favourite .favItem .favItem_info .price .currentPrice:hover {
+  color: #222;
+}
+.Favourite .favItem .favItem_info .price .oldprice {
+  text-decoration: line-through;
+  color: var(--main-color);
+}
+.Favourite .favItem .favItem_info .favItem_options {
+  margin: 20px auto 15px;
+  width: 80%;
+  gap: 30px;
+}
+.Favourite .favItem .favItem_info .favItem_options .colors {
+  gap: 10px;
+}
+.Favourite .favItem .favItem_info .favItem_options .colors li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.Favourite .favItem .favItem_info .favItem_options .colors li:hover {
+  box-shadow: 1px 1px 10px #666;
+}
+.Favourite .favItem .favItem_info .favItem_options .colors li:first-child {
+  background-color: red;
+}
+.Favourite .favItem .favItem_info .favItem_options .colors li:nth-child(2) {
+  background-color: gray;
+}
+.Favourite .favItem .favItem_info .favItem_options .colors li:last-child {
+  background-color: burlywood;
+}
+.Favourite .favItem .favItem_info .favItem_options select {
+  max-width: 100px;
+  transition: var(--main-transition);
+}
+.Favourite .favItem .favItem_info .favItem_options select.form-select:focus {
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+.Favourite .favItem .favItem_info .linkstochart {
+  font-size: 19px;
+}
+@media (max-width: 330px) {
+  .Favourite .favItem .favItem_info .linkstochart {
+    flex-direction: column;
+  }
+}
+.Favourite .favItem .favItem_info .linkstochart .addtochart {
+  border: 1px solid #ccc;
+  color: var(--main-color);
+  margin: 15px 0;
+  padding: 15px 20px;
+  width: fit-content;
+  border-radius: 10px;
+  transition: var(--main-transition);
+  font-weight: 600;
+  background-color: var(--alt-color);
+}
+@media (max-width: 330px) {
+  .Favourite .favItem .favItem_info .linkstochart .addtochart {
+    margin: 0 auto;
+  }
+}
+.Favourite .favItem .favItem_info .linkstochart .addtochart:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  border-color: var(--main-color);
+}
+.Favourite .favItem .favItem_info .linkstochart .gotochart {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 10px;
+}
+@media (max-width: 330px) {
+  .Favourite .favItem .favItem_info .linkstochart .gotochart {
+    margin: 8px auto;
+  }
+}
+.Favourite .favItem .favItem_info .linkstochart .gotochart:hover {
+  color: #fff;
+}
+.Favourite .noItems {
+  width: fit-content;
+  margin: auto;
+  color: var(--main-color);
+  font-size: 23px;
+  font-weight: 700;
+  padding: 21px;
+}/*# sourceMappingURL=Favourite.css.map */

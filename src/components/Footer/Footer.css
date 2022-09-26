@@ -1,0 +1,71 @@
+footer {
+  background-color: var(--bg-dark);
+  padding: 60px 0 40px;
+  color: #666;
+}
+footer .footer_title {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+footer .footer_list {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .footer_list li a {
+  width: fit-content;
+  transition: var(--main-transition);
+  color: inherit;
+  font-size: 15px;
+}
+footer .footer_list li a:hover {
+  color: var(--main-color);
+}
+footer address {
+  font-size: 15px;
+}
+footer .social {
+  gap: 20px;
+}
+footer .social li a {
+  color: inherit;
+  transition: var(--main-transition);
+  display: inline-block;
+}
+footer .social li a:hover {
+  transform: translateY(-3px);
+  color: var(--main-color);
+}
+footer input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 2px solid #888;
+  background: transparent;
+  transition: var(--main-transition);
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+footer input:focus {
+  outline: none;
+}
+footer input:focus + .focus_input {
+  width: 100%;
+}
+footer .focus_input {
+  position: relative;
+  width: 0;
+  height: 2px;
+  left: 0;
+  top: -2px;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+}
+footer .copyright {
+  margin-top: 60px;
+  font-size: 15px;
+  text-align: center;
+}/*# sourceMappingURL=Footer.css.map */

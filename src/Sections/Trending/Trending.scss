@@ -1,0 +1,124 @@
+@import '../../mixins';
+.Trending {
+  background-color: var(--alt-color);
+  .mySwiper {
+    figure {
+      cursor: pointer;
+      transition: var(--main-transition);
+      position: relative;
+      padding-bottom: 15px;
+      &:hover {
+        box-shadow: 1px 1px 20px var(--main-color);
+        img {
+          animation: imganime 3.5s linear;
+        }
+        .trend_image_hold .trend_image_option {
+          opacity: 1;
+        }
+      }
+      .trend_image_hold {
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .trend_image_option {
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: var(--main-transition);
+          @media (max-width: 470px) {
+            top: 60%;
+          }
+          @include media(sm) {
+            opacity: 1;
+          }
+          li {
+            background-color: #fff;
+            padding: 10px 20px;
+            transition: var(--main-transition);
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include media(md) {
+              font-size: 23px;
+            }
+            @include media(sm) {
+              font-size: 21px;
+            }
+            &:hover {
+              background-color: var(--main-color);
+              box-shadow: 0 0 7px #fff;
+              svg {
+                color: #fff;
+              }
+            }
+            svg {
+              color: var(--main-color);
+              transition: var(--main-transition);
+            }
+            &:first-child {
+              position: relative;
+              padding: 30px;
+              &:hover {
+                &::before,
+                &.favicon::before {
+                  color: #fff;
+                }
+              }
+              &::before {
+                @include favicon;
+              }
+              &.favicon {
+                &::before {
+                  @include favicon;
+                  font-weight: 900;
+                }
+              }
+            }
+          }
+        }
+      }
+      figcaption {
+        margin-top: 20px;
+        text-align: center;
+        .image_desc {
+          font-weight: 500;
+          font-size: 15px;
+          color: #333;
+          transition: var(--main-transition);
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          font-weight: 600;
+          font-size: 16px;
+          @include media(sm) {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .currentPrice{
+            color: #666;
+            transition: var(--main-transition);
+            &:hover {
+              color: #222;
+            }
+          }
+          .oldprice {
+            text-decoration: line-through;
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+}

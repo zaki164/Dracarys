@@ -1,0 +1,151 @@
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+@import '../../mixins';
+.products {
+  padding-top: 100px !important;
+  .products_categories {
+    margin: 30px 0;
+    flex-wrap: wrap;
+    @include media(sm) {
+      gap: 10px;
+    }
+    li {
+      padding: 20px;
+      position: relative;
+      border: 1px solid #ccc;
+      @media (min-width: 768px) {
+        &:nth-child(even) {
+          border-left: none;
+          border-right: none;
+        }
+      }
+      color: #333;
+      transition: var(--main-transition);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover,
+      &.active {
+        background-color: var(--main-color);
+        color: #fff;
+        box-shadow: 0 0 10px #999;
+        border: none;
+        transform: scale(1.1);
+        z-index: 3;
+        font-size: 17px;
+      }
+    }
+  }
+  .product {
+    cursor: pointer;
+    position: relative;
+    transition: .7s;
+    box-shadow: 0px 0px 30px #0d0c0d33;
+    &:hover {
+      box-shadow: 0px 0px 20px var(--main-color);
+      img {
+        transform: scale(1.1);
+      }
+      .image_hold .product_option {
+        opacity: 1;
+      }
+    }
+    .image_hold {
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      img {
+        transition: .7s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product_option {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: var(--main-transition);
+        z-index: 10;
+        @media (max-width: 470px) {
+          top: 60%;
+        }
+        @include media(sm) {
+          opacity: 1;
+        }
+        li {
+          background-color: #fff;
+          padding: 10px 20px;
+          transition: var(--main-transition);
+          font-size: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            background-color: var(--main-color);
+            box-shadow: 0 0 7px #fff;
+            svg {
+              color: #fff;
+            }
+          }
+          svg {
+            color: var(--main-color);
+            transition: var(--main-transition);
+          }
+          &:first-child {
+            position: relative;
+            padding: 30px;
+            &:hover {
+              &::before,
+              &.favicon::before {
+                color: #fff;
+              }
+            }
+            &::before {
+              @include favicon;
+            }
+            &.favicon {
+              &::before {
+                @include favicon;
+                font-weight: 900;
+              }
+            }
+          }
+        }
+      }
+    }
+    .product_info {
+      padding: 20px 0 20px;
+      text-align: center;
+      background-color: var(--alt-color);
+      .image_desc {
+        font-weight: 500;
+        font-size: 15px;
+        color: #333;
+        transition: var(--main-transition);
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        .currentPrice{
+          color: #777;
+          transition: var(--main-transition);
+          &:hover {
+            color: #222;
+          }
+        }
+        .oldprice {
+          text-decoration: line-through;
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}

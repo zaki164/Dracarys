@@ -1,0 +1,240 @@
+.blog main .blog_features .blog_tags_title, .blog main .blog_features .blog_archive_title, .blog main .blog_features .blog_features_title, .blog main .blog_figures figure figcaption .title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.blog main .blog_features .tags, .blog main .blog_features .arch, .blog main .blog_features .cat {
+  flex-direction: column;
+  gap: 10px;
+}
+.blog main .blog_features .tags li a, .blog main .blog_features .arch li a, .blog main .blog_features .cat li a {
+  font-size: 15px;
+  padding: 7px 0;
+  display: block;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+  transition: var(--main-transition);
+}
+.blog main .blog_features .tags li a:hover, .blog main .blog_features .arch li a:hover, .blog main .blog_features .cat li a:hover {
+  color: var(--main-color);
+}
+
+.blog .blog_img {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/insta2.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: 280px -45px;
+}
+@media (max-width: 991px) {
+  .blog .blog_img {
+    background-position: 0;
+  }
+}
+.blog .blog_img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.blog .blog_img::after {
+  content: "Blog";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+}
+.blog main {
+  padding: 70px 0;
+}
+.blog main .blog_figures figure {
+  position: relative;
+  margin-bottom: 50px;
+}
+.blog main .blog_figures figure .date {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #666;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3px 7px;
+  text-align: center;
+  font-size: 13px;
+}
+.blog main .blog_figures figure .date span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #222;
+  display: block;
+}
+.blog main .blog_figures figure img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.blog main .blog_figures figure figcaption {
+  margin-top: 20px;
+  color: #666;
+  font-size: 15px;
+}
+.blog main .blog_figures figure figcaption .text {
+  margin: 20px 0;
+}
+.blog main .blog_figures figure figcaption .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .blog main .blog_figures figure figcaption .info {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+.blog main .blog_figures figure figcaption .info p {
+  margin-bottom: 0 !important;
+}
+.blog main .blog_figures figure figcaption .info p span {
+  color: #222;
+}
+@media (max-width: 400px) {
+  .blog main .blog_figures figure figcaption .info p span {
+    display: block;
+    margin: 5px 0;
+  }
+}
+.blog main .blog_figures figure figcaption .info p span.info_text {
+  padding: 0 20px;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .blog main .blog_figures figure figcaption .info p span.info_text {
+    padding: 0;
+  }
+}
+.blog main .blog_figures figure figcaption .info p span.info_text::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  right: 10px;
+}
+@media (max-width: 400px) {
+  .blog main .blog_figures figure figcaption .info p span.info_text::before {
+    display: none;
+  }
+}
+.blog main .blog_figures figure figcaption .info p span.info_text::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  left: 10px;
+}
+@media (max-width: 400px) {
+  .blog main .blog_figures figure figcaption .info p span.info_text::after {
+    display: none;
+  }
+}
+.blog main .blog_figures figure figcaption .info .continue {
+  display: flex;
+  align-items: center;
+  transition: var(--main-transition);
+  color: #222;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .blog main .blog_figures figure figcaption .info .continue {
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+}
+.blog main .blog_figures figure figcaption .info .continue:hover {
+  color: var(--main-color);
+}
+.blog main .blog_figures figure figcaption .info .continue svg {
+  margin: 2px 0 0 7px;
+}
+.blog main .blog_features {
+  padding-left: 50px;
+}
+@media (max-width: 991px) {
+  .blog main .blog_features {
+    padding-left: 20px;
+  }
+}
+.blog main .blog_features form input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #fff;
+  border-radius: 10px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+  transition: var(--main-transition);
+  border-radius: 50px;
+}
+.blog main .blog_features form input:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+.blog main .blog_features .blog_features_title {
+  margin: 40px 0 20px;
+}
+.blog main .blog_features .blog_archive_title {
+  margin: 240px 0 20px;
+}
+@media (max-width: 991px) {
+  .blog main .blog_features .blog_archive_title {
+    margin: 145px 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .blog main .blog_features .blog_archive_title {
+    margin: 75px 0 20px;
+  }
+}
+.blog main .blog_features .arch a {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog main .blog_features .blog_tags_title {
+  margin: 240px 0 30px;
+}
+@media (max-width: 991px) {
+  .blog main .blog_features .blog_tags_title {
+    margin: 145px 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .blog main .blog_features .blog_tags_title {
+    margin: 75px 0 20px;
+  }
+}
+.blog main .blog_features .tags {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.blog main .blog_features .tags a {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 10px 15px !important;
+  margin-bottom: 10px;
+}
+.blog main .blog_features .tags a:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}/*# sourceMappingURL=Blog.css.map */

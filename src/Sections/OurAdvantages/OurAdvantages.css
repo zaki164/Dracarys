@@ -1,0 +1,25 @@
+.OurAdvantages .col:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+@media (max-width: 576px) {
+  .OurAdvantages .col {
+    border: unset !important;
+  }
+}
+@media (max-width: 991px) {
+  .OurAdvantages .col:nth-child(2) {
+    border-right: none;
+  }
+  .OurAdvantages .col:nth-child(odd) {
+    border-right: 1px solid #ddd;
+  }
+}
+.OurAdvantages .col .adv_title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.OurAdvantages .col .adv_text {
+  color: #666;
+}/*# sourceMappingURL=OurAdvantages.css.map */

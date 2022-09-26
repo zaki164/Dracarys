@@ -1,0 +1,28 @@
+@import '../../mixins';
+.OurAdvantages {
+  .col {
+    &:not(:last-child) {
+      border-right: 1px solid #ddd;
+    }
+    @include media('xs') {
+      border: unset !important;
+    }
+    @include media('md') {
+      &:nth-child(2) {
+        border-right: none;
+      }
+      &:nth-child(odd) {
+        border-right: 1px solid #ddd;
+      }
+    }
+    .adv_title {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+    }
+    .adv_text {
+      color: #666;
+    }
+  }
+}

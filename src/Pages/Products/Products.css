@@ -1,0 +1,166 @@
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+.products {
+  padding-top: 100px !important;
+}
+.products .products_categories {
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .products .products_categories {
+    gap: 10px;
+  }
+}
+.products .products_categories li {
+  padding: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: var(--main-transition);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .products .products_categories li:nth-child(even) {
+    border-left: none;
+    border-right: none;
+  }
+}
+.products .products_categories li:hover, .products .products_categories li.active {
+  background-color: var(--main-color);
+  color: #fff;
+  box-shadow: 0 0 10px #999;
+  border: none;
+  transform: scale(1.1);
+  z-index: 3;
+  font-size: 17px;
+}
+.products .product {
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s;
+  box-shadow: 0px 0px 30px rgba(13, 12, 13, 0.2);
+}
+.products .product:hover {
+  box-shadow: 0px 0px 20px var(--main-color);
+}
+.products .product:hover img {
+  transform: scale(1.1);
+}
+.products .product:hover .image_hold .product_option {
+  opacity: 1;
+}
+.products .product .image_hold {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.products .product .image_hold img {
+  transition: 0.7s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.products .product .image_hold .product_option {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: var(--main-transition);
+  z-index: 10;
+}
+@media (max-width: 470px) {
+  .products .product .image_hold .product_option {
+    top: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .products .product .image_hold .product_option {
+    opacity: 1;
+  }
+}
+.products .product .image_hold .product_option li {
+  background-color: #fff;
+  padding: 10px 20px;
+  transition: var(--main-transition);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .product .image_hold .product_option li:hover {
+  background-color: var(--main-color);
+  box-shadow: 0 0 7px #fff;
+}
+.products .product .image_hold .product_option li:hover svg {
+  color: #fff;
+}
+.products .product .image_hold .product_option li svg {
+  color: var(--main-color);
+  transition: var(--main-transition);
+}
+.products .product .image_hold .product_option li:first-child {
+  position: relative;
+  padding: 30px;
+}
+.products .product .image_hold .product_option li:first-child:hover::before, .products .product .image_hold .product_option li:first-child:hover.favicon::before {
+  color: #fff;
+}
+.products .product .image_hold .product_option li:first-child::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: 200;
+  position: absolute;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.products .product .image_hold .product_option li:first-child.favicon::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: 200;
+  position: absolute;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+.products .product .product_info {
+  padding: 20px 0 20px;
+  text-align: center;
+  background-color: var(--alt-color);
+}
+.products .product .product_info .image_desc {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  transition: var(--main-transition);
+}
+.products .product .product_info .image_desc:hover {
+  color: var(--main-color);
+}
+.products .product .product_info .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.products .product .product_info .price .currentPrice {
+  color: #777;
+  transition: var(--main-transition);
+}
+.products .product .product_info .price .currentPrice:hover {
+  color: #222;
+}
+.products .product .product_info .price .oldprice {
+  text-decoration: line-through;
+  color: var(--main-color);
+}/*# sourceMappingURL=Products.css.map */

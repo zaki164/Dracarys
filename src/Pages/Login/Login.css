@@ -1,0 +1,152 @@
+.login {
+  padding-top: 80px !important;
+}
+.login .login_cont {
+  padding: 50px 40px;
+  width: 40%;
+  box-shadow: 0px 0px 30px rgba(13, 12, 13, 0.2);
+}
+@media (max-width: 1199px) {
+  .login .login_cont {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .login .login_cont {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .login .login_cont {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .login .login_cont {
+    width: 100%;
+  }
+}
+.login .login_cont h2 {
+  color: #333;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+.login .login_cont h2 + p {
+  text-align: center;
+  font-size: 17px;
+  color: #666;
+  margin: 20px 0 30px;
+}
+.login .login_cont form {
+  margin-top: 30px;
+}
+.login .login_cont form label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  margin: 30px 0 10px;
+  cursor: pointer;
+}
+.login .login_cont form input:not(#keeplog) {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #fff;
+  border-radius: 10px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+  transition: var(--main-transition);
+  font-size: 14px;
+}
+.login .login_cont form input:not(#keeplog):focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+.login .login_cont form .log_info {
+  margin: 20px 0;
+}
+@media (max-width: 767px) {
+  .login .login_cont form .log_info {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .login .login_cont form .log_info {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.login .login_cont form .log_info .log_keep {
+  display: flex;
+}
+.login .login_cont form .log_info .log_keep input {
+  appearance: none;
+}
+.login .login_cont form .log_info .log_keep input:checked + .keeplabel::before {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+.login .login_cont form .log_info .log_keep input:checked + .keeplabel::after {
+  transform: rotate(0) scale(1);
+  color: #fff;
+}
+.login .login_cont form .log_info .log_keep .keeplabel {
+  margin: 0;
+  padding-left: 30px;
+  position: relative;
+}
+.login .login_cont form .log_info .log_keep .keeplabel::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 5px;
+  left: 3px;
+  top: 2px;
+  border: 1px solid #ccc;
+  transition: var(--main-transition);
+}
+.login .login_cont form .log_info .log_keep .keeplabel::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  position: absolute;
+  font-weight: bold;
+  color: #000;
+  left: 5px;
+  top: -1px;
+  font-size: 16px;
+  transition: var(--main-transition);
+  transform: rotate(180deg) scale(0);
+}
+.login .login_cont form .log_info .forgotpass {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+@media (max-width: 576px) {
+  .login .login_cont form .log_info .forgotpass {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .login .login_cont form .logEnd {
+    flex-direction: column;
+  }
+}
+.login .login_cont form .logEnd .tosignup {
+  color: #666;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .login .login_cont form .logEnd .tosignup {
+    margin-bottom: 15px;
+  }
+}
+.login .login_cont form .logEnd .tosignup .signLink {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 15px;
+}/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,131 @@
+@mixin media($screen) {
+  @if ($screen == 'xs') {
+    @media (max-width: 576px) {
+        @content;
+    }
+  }
+  @if ($screen == 'sm') {
+    @media (max-width: 767px) {
+        @content;
+    }
+  }
+  @if ($screen == 'md') {
+    @media (max-width: 991px) {
+        @content;
+    }
+  }
+  @if ($screen == 'lg') {
+    @media (max-width: 1199px) {
+        @content;
+    }
+  }
+  @if ($screen == 'xl') {
+    @media (min-width: 1200px) {
+        @content;
+    }
+  }
+}
+@mixin overlay($color) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $color;
+}
+@mixin common_sectoin_landing($title, $img: '../../assets/insta2.jpg') {
+  width: 100%;
+  height: 400px;
+  background-image: url($img);
+  background-size: cover;
+  position: relative;
+  background-position: 280px -45px;
+  @include media('md') {
+    background-position: 0;
+  }
+  &::before {
+    content: '';
+    @include overlay(rgba(0, 0, 0, 30%));
+  }
+  &::after {
+    content: $title;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+  }
+}
+@mixin custom_input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #fff;
+  border-radius: 10px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+  transition: var(--main-transition);
+  &:focus {
+    outline: none;
+    border-color: var(--main-color);
+  }
+}
+@mixin NavLinkNewItem($new) {
+  position: relative;
+  @include media('md') {
+    &:hover {
+      &::before {
+        left: 90px;
+      }
+      &::after {
+        left: 75px;
+      }
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 27px;
+    top: 14px;
+    border: 5px solid;
+    border-color: var(--main-color) transparent transparent transparent;
+    transition: var(--main-transition);
+    @include media('md') {
+      top: 15px;
+      left: 80px;
+    }
+  }
+  &::after {
+    content: "Sale";
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 2px 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 13px;
+    transition: var(--main-transition);
+    @include media('md') {
+      top: -8px;
+      left: 65px;
+    }
+  }
+}
+@mixin favicon {
+  font-family: 'Font Awesome 5 Free';
+  content: '';
+  font-weight: 200;
+  position: absolute;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

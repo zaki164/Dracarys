@@ -1,0 +1,92 @@
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+.FollowInsta {
+  position: relative;
+}
+.FollowInsta .row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  transition: var(--main-transition);
+}
+.FollowInsta .row::-webkit-scrollbar {
+  display: none;
+}
+.FollowInsta .row:hover .scroll_button_right,
+.FollowInsta .row:hover .scroll_button_left {
+  opacity: 0.9;
+}
+.FollowInsta .row .col {
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+.FollowInsta .row .col::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background-color: rgba(12, 12, 12, 0.5);
+  transition: var(--main-transition);
+}
+.FollowInsta .row .col:after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+  font-weight: 400;
+  font-size: 30px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--main-transition);
+  z-index: 5;
+}
+.FollowInsta .row .col:hover::before {
+  top: 0;
+}
+.FollowInsta .row .col:hover::after {
+  top: 50%;
+  color: var(--main-color);
+}
+.FollowInsta .row .col img {
+  max-width: 100%;
+  height: 100%;
+  transition: var(--main-transition);
+}
+.FollowInsta .row .scroll_button_right,
+.FollowInsta .row .scroll_button_left {
+  position: absolute;
+  top: 63%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(12, 12, 12, 0.8);
+  border-radius: 50%;
+  transition: var(--main-transition);
+  user-select: none;
+  color: var(--main-color);
+  opacity: 0.4;
+  cursor: pointer;
+}
+.FollowInsta .row .scroll_button_right:active, .FollowInsta .row .scroll_button_right:hover,
+.FollowInsta .row .scroll_button_left:active,
+.FollowInsta .row .scroll_button_left:hover {
+  opacity: 1;
+  background-color: #000;
+}
+.FollowInsta .row .scroll_button_right svg,
+.FollowInsta .row .scroll_button_left svg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.FollowInsta .row .scroll_button_right {
+  right: 20px;
+}
+.FollowInsta .row .scroll_button_left {
+  left: 20px;
+}/*# sourceMappingURL=FollowInsta.css.map */

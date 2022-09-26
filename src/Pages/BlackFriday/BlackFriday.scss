@@ -1,0 +1,47 @@
+@import '../../mixins';
+.BlackFriday {
+  background-color: #ffaf06;
+  img {
+    max-width: 100%;
+  }
+  .blackfiday_time {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 400px) {
+      flex-wrap: wrap;
+      li {
+        width: 40%;
+      }
+    }
+    li {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 50px;
+      text-align: center;
+      font-weight: 600;
+      color: #666;
+      box-shadow: 0 0 10px #fff;
+      @include media('sm') {
+        padding: 20px 30px;
+        border-radius: 40px;
+      }
+      @include media('sm') {
+        padding: 10px 20px;
+        border-radius: 30px;
+      }
+      span {
+        color: var(--main-color);
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+        @include media('sm') {
+          font-size: 30px;
+        }
+        @include media('sm') {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

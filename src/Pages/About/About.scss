@@ -1,0 +1,65 @@
+@import '../../mixins';
+%about_image_style {
+  position: relative;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include media('md') {
+    width: 60%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 3px solid #888;
+    z-index: -1;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+%about_text_style {
+  @include media('md') {
+    text-align: center;
+  }
+  h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.about {
+  .about_img {
+    @include common_sectoin_landing('About', '../../assets/insta3.jpg');
+  }
+  .about_info {
+    color: #888;
+    padding: 70px 0;
+    .about_story {
+      margin-bottom: 150px;
+      .about_story_text {
+        @extend %about_text_style;
+      }
+      .about_story_image {
+        @extend %about_image_style;
+      }
+    }
+    .about_mission {
+      .about_mission_image {
+        @extend %about_image_style;
+      }
+      .about_mission_text {
+        @extend %about_text_style;
+      }
+    }
+  }
+}
