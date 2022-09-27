@@ -1,4 +1,4 @@
-import { Category, FollowInsta, Landing, LatestBlogs, OurAdvantages, Store, Testimonials, Trending } from "../../Sections";
+import { Category, FollowInsta, Landing, LatestBlogs, OurAdvantages, Testimonials, Trending } from "../../Sections";
 
 const Home = () => {
   return (
@@ -6,9 +6,8 @@ const Home = () => {
       <Landing />
       <Category />
       <Trending />
-      <LatestBlogs />
-      <Store />
-      <FollowInsta />
+      {/* <LatestBlogs /> */}
+      {/* <FollowInsta /> */}
       <Testimonials />
       <OurAdvantages />
     </>

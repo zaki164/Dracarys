@@ -24,7 +24,7 @@ const FollowInsta = () => {
         {
           imgarray.map((ele, i) => (
             <div className="image_holder col-6 col-md-4 col-lg-3 col-xl-2 col-6 col-sm-4 col-md-3 col-lg-2 col" key={i + 1}>
-              <img src={ele} alt="instagram"/>
+              <img src={images.testimonial1} alt="instagram"/>
             </div>
           ))
         }
