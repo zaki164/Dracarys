@@ -14,26 +14,24 @@ AOS.init({
 });
 
 const App = () => (
-  <>
+  <BrowserRouter>
     <Summary />
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/BlackFriday' element={<BlackFriday />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Blog' element={<Blog />} />
-        <Route path='/Chart' element={<Chart />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Favourite' element={<Favourite />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/SignUp' element={<SignUp />} />
-        <Route path='/Products' element={<Products />} />
-        <Route path='/Products/:id' element={<Product />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </>
+    <Navbar />
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route exact path='/BlackFriday' element={<BlackFriday />} />
+      <Route path='/About' element={<About />} />
+      <Route path='/Blog' element={<Blog />} />
+      <Route path='/Chart' element={<Chart />} />
+      <Route path='/Contact' element={<Contact />} />
+      <Route path='/Favourite' element={<Favourite />} />
+      <Route path='/Login' element={<Login />} />
+      <Route path='/SignUp' element={<SignUp />} />
+      <Route path='/Products' element={<Products />} />
+      <Route path='/Products/:id' element={<Product />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
 );
 
 export default App;

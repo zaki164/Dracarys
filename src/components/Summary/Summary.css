@@ -17,7 +17,7 @@
 .summary p.active {
   margin-top: 0;
 }
-.summary p a, .summary p span {
+.summary p a {
   color: var(--main-color) !important;
   cursor: pointer;
 }/*# sourceMappingURL=Summary.css.map */
