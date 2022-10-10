@@ -3,7 +3,7 @@
     "id": 36,
     "name": "shirt",
     "category": "Men onsale",
-    "img": "/images/products/xproduct-men-10.jpg",
+    "img": "./images/products/xproduct-men-10.jpg",
     "oldprice": 570,
     "price": 370,
     "num": 1
@@ -54,7 +54,7 @@
     "id": 37,
     "name": "shirts",
     "category": "Men",
-    "img": "/images/products/xproduct-men-11.jpg",
+    "img": "./images/products/xproduct-men-11.jpg",
     "price": 400,
     "num": 1
   },
@@ -62,7 +62,7 @@
     "id": 1,
     "name": "Shoes",
     "category": "shoes onsale",
-    "img": "/images/products/flash-1.png",
+    "img": "./images/products/flash-1.png",
     "oldprice": 200,
     "price": 100,
     "num": 1
@@ -71,7 +71,7 @@
     "id": 2,
     "name": "Watch",
     "category": "watches onsale",
-    "img": "/images/products/flash-2.png",
+    "img": "./images/products/flash-2.png",
     "oldprice": 400,
     "price": 200,
     "num": 1
@@ -80,7 +80,7 @@
     "id": 3,
     "name": "Smart Mobile Black",
     "category": "Accessories onsale",
-    "img": "/images/products/flash-3.png",
+    "img": "./images/products/flash-3.png",
     "oldprice": 520,
     "price": 200,
     "num": 1
@@ -89,7 +89,7 @@
     "id": 4,
     "name": "Smart Watch Black",
     "category": "watches onsale",
-    "img": "/images/products/flash-4.png",
+    "img": "./images/products/flash-4.png",
     "oldprice": 90,
     "price": 50,
     "num": 1
@@ -98,7 +98,7 @@
     "id": 5,
     "name": "Glasses",
     "category": "Accessories onsale",
-    "img": "/images/products/flash-5.png",
+    "img": "./images/products/flash-5.png",
     "oldprice": 250,
     "price": 100,
     "num": 1
@@ -107,7 +107,7 @@
     "id": 6,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-1.png",
+    "img": "./images/products/discount-1.png",
     "oldprice": 510,
     "price": 200,
     "num": 1
@@ -116,7 +116,7 @@
     "id": 7,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-2.png",
+    "img": "./images/products/discount-2.png",
     "oldprice": 290,
     "price": 200,
     "num": 1
@@ -125,7 +125,7 @@
     "id": 8,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-4.png",
+    "img": "./images/products/discount-4.png",
     "oldprice": 600,
     "price": 400,
     "num": 1
@@ -134,7 +134,7 @@
     "id": 9,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-5.png",
+    "img": "./images/products/discount-5.png",
     "oldprice": 330,
     "price": 200,
     "num": 1
@@ -143,7 +143,7 @@
     "id": 10,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-6.png",
+    "img": "./images/products/discount-6.png",
     "oldprice": 1000,
     "price": 900,
     "num": 1
@@ -152,7 +152,7 @@
     "id": 11,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-7.png",
+    "img": "./images/products/discount-7.png",
     "oldprice": 700,
     "price": 500,
     "num": 1
@@ -161,7 +161,7 @@
     "id": 12,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-8.png",
+    "img": "./images/products/discount-8.png",
     "oldprice": 870,
     "price": 700,
     "num": 1
@@ -170,7 +170,7 @@
     "id": 13,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-9.png",
+    "img": "./images/products/discount-9.png",
     "oldprice": 320,
     "price": 200,
     "num": 1
@@ -179,7 +179,7 @@
     "id": 14,
     "name": "Jacket",
     "category": "Men onsale",
-    "img": "/images/products/slide-3.png",
+    "img": "./images/products/slide-3.png",
     "oldprice": 1400,
     "price": 1200,
     "num": 1
@@ -188,7 +188,7 @@
     "id": 15,
     "name": "T-shirt",
     "category": "Men onsale",
-    "img": "/images/products/Men44.png",
+    "img": "./images/products/Men44.png",
     "oldprice": 780,
     "price": 600,
     "num": 1
@@ -214,7 +214,7 @@
     "id": 23,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-1.png",
+    "img": "./images/products/shops-1.png",
     "price": 500,
     "num": 1
   },
@@ -222,7 +222,7 @@
     "id": 24,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-2.png",
+    "img": "./images/products/shops-2.png",
     "price": 600,
     "num": 1
   },
@@ -230,7 +230,7 @@
     "id": 25,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-3.png",
+    "img": "./images/products/shops-3.png",
     "price": 300 ,
     "num": 1
   },
@@ -238,7 +238,7 @@
     "id": 26,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-4.png",
+    "img": "./images/products/shops-4.png",
     "price": 900 ,
     "num": 1
   },
@@ -246,7 +246,7 @@
     "id": 27,
     "name": "Accessories",
     "category": "Accessories onsale",
-    "img": "/images/products/shops-5.png",
+    "img": "./images/products/shops-5.png",
     "oldprice": 960,
     "price": 800,
     "num": 1
@@ -255,7 +255,7 @@
     "id": 28,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-6.png",
+    "img": "./images/products/shops-6.png",
     "price": 500,
     "num": 1
   },
@@ -263,7 +263,7 @@
     "id": 29,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-7.png",
+    "img": "./images/products/shops-7.png",
     "price": 400 ,
     "num": 1
   },
@@ -271,7 +271,7 @@
     "id": 30,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-8.png",
+    "img": "./images/products/shops-8.png",
     "price": 500,
     "num": 1
   },
@@ -279,7 +279,7 @@
     "id": 31,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-9.png",
+    "img": "./images/products/shops-9.png",
     "price": 200,
     "num": 1
   },
@@ -287,7 +287,7 @@
     "id": 32,
     "name": "Accessories",
     "category": "Accessories",
-    "img": "/images/products/shops-10.png",
+    "img": "./images/products/shops-10.png",
     "price": 600,
     "num": 1
   },
@@ -295,7 +295,7 @@
     "id": 33,
     "name": "jacket",
     "category": "Men",
-    "img": "/images/products/productmen.jpg",
+    "img": "./images/products/productmen.jpg",
     "price": 900,
     "num": 1
   },
@@ -303,7 +303,7 @@
     "id": 34,
     "name": "Jacket",
     "category": "Women",
-    "img": "/images/products/productswomen.jpg",
+    "img": "./images/products/productswomen.jpg",
     "price": 1300,
     "num": 1
   },
@@ -311,7 +311,7 @@
     "id": 35,
     "name": "Accessories",
     "category": "OnSale",
-    "img": "/images/products/discount-3.png",
+    "img": "./images/products/discount-3.png",
     "oldprice": 270,
     "price": 200,
     "num": 1
@@ -320,7 +320,7 @@
     "id": 38,
     "name": "T-shirt",
     "category": "women",
-    "img": "/images/products/trend1.jpg",
+    "img": "./images/products/trend1.jpg",
     "oldprice": 500,
     "price": 350,
     "num": 1
@@ -329,7 +329,7 @@
     "id": 39,
     "name": "Short",
     "category": "women",
-    "img": "/images/products/trend2.jpg",
+    "img": "./images/products/trend2.jpg",
     "oldprice": 300,
     "price": 200,
     "num": 1
@@ -338,7 +338,7 @@
     "id": 40,
     "name": "T-Shirt",
     "category": "women",
-    "img": "/images/products/trend3.jpg",
+    "img": "./images/products/trend3.jpg",
     "oldprice": 400,
     "price": 300,
     "num": 1
@@ -347,7 +347,7 @@
     "id": 41,
     "name": "Sweatshirt",
     "category": "women",
-    "img": "/images/products/trend4.jpg",
+    "img": "./images/products/trend4.jpg",
     "oldprice": 700,
     "price": 620,
     "num": 1
