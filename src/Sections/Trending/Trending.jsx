@@ -12,7 +12,7 @@ import { Navigation, Autoplay } from "swiper";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItemtochart, addItemtofav, deleteFavItem } from '../../redux/action';
-import { Data } from '../../constants'
+import { Data } from '../../constants';
 import './Trending.css';
 
 const trendarr = Data.filter(ele => ele.id >= 38 && ele.id <= 41)

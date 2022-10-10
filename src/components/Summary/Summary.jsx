@@ -12,7 +12,6 @@ const Summary = () => {
         ele.classList.remove('active');
       })
       myps[i].classList.add('active');
-      console.log(i)
       i++;
       if (i === myps.length) {
         i = 0;

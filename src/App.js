@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import 'aos/dist/aos.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { About, BlackFriday, Blog, Chart, Contact, Favourite, Home, Login, Product, Products, SignUp } from './Pages';
 import { Footer, Navbar, Summary } from './components';
@@ -14,7 +14,7 @@ AOS.init({
 });
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <Summary />
     <Navbar />
     <Routes>
@@ -31,7 +31,7 @@ const App = () => (
       <Route path='/Products/:id' element={<Product />} />
     </Routes>
     <Footer />
-  </BrowserRouter>
+  </Router>
 );
 
 export default App;
