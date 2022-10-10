@@ -41,14 +41,15 @@ const Products = () => {
         duration: 600
       }
     });
-    let catfilter = window.location.hash && `.${[...window.location.hash].slice(1).join("").toLocaleLowerCase()}`
+    let cat = (window.location.hash).split("#").pop();
+    let catfilter = cat.includes("/") || `.${cat.toLocaleLowerCase()}`
     let lis = [...catsref.current.children];
     lis.forEach(li => {
       li.addEventListener('click', () => {
         lis.forEach(li => li.classList.remove('active'));
         li.classList.add('active');
       })
-      window.location.hash && li.dataset.filter === catfilter && li.click()
+      !cat.includes("/") && li.dataset.filter === catfilter && li.click()
     })
   }, [])
   return (
