@@ -11,7 +11,7 @@ const BlackFriday = () => {
     const minsspan = listref.current.children[2].firstChild;
     const secsspan = listref.current.children[3].firstChild;
     let myinterval = setInterval(() => {
-      let date = new Date('Nov 22, 2022 23:59:59');
+      let date = new Date('Nov 22, 2023 23:59:59');
       let datenow = new Date();
       let diff = date - datenow;
       let days = Math.floor(diff / (1000 * 60 * 60 * 24));

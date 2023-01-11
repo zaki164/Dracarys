@@ -11,7 +11,7 @@ import { Navigation, Autoplay } from "swiper";
 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { addItemtochart, addItemtofav, deleteFavItem } from '../../redux/action';
+import { addItemtochart, addItemtofav, deleteFavItem, deleteChartItem } from '../../redux/action';
 import { Data } from '../../constants';
 import './Trending.css';
 
@@ -20,6 +20,7 @@ const trendarr = Data.filter(ele => ele.id >= 38 && ele.id <= 41)
 const Trending = () => {
   const route = useNavigate();
   const favItems = useSelector(state => state.fav);
+  const chartItems = useSelector(state => state.chart)
   const dispatch = useDispatch();
   let oldprice = true;
   const handlepropa = (e) => {
@@ -30,6 +31,13 @@ const Trending = () => {
       dispatch(deleteFavItem(ele))
     } else {
       dispatch(addItemtofav(ele));
+    }
+  }
+  const handlecart = (ele) => {
+    if (chartItems.some(el => el.id === ele.id)) {
+      dispatch(deleteChartItem(ele))
+    } else {
+      dispatch(addItemtochart(ele));
     }
   }
   return (
@@ -70,7 +78,7 @@ const Trending = () => {
                     <img src={ele.img} alt="trending" />
                     <ul className="trend_image_option" onClick={handlepropa}>
                       <li onClick={() => handlefav(ele)} className={favItems.map(el => el.id === ele.id ? 'favicon' : '').join("")}></li>
-                      <li onClick={() => dispatch(addItemtochart(ele))}><FontAwesomeIcon icon={faCartShopping} /></li>
+                      <li onClick={() => handlecart(ele)}><FontAwesomeIcon icon={faCartShopping} /></li>
                     </ul>
                   </div>
                   <figcaption>

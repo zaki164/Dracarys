@@ -7,7 +7,7 @@ import { Data } from '../../constants';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import './Products.css';
 import { useDispatch, useSelector } from 'react-redux';
-import {addItemtochart, addItemtofav, deleteFavItem } from '../../redux/action';
+import { addItemtochart, addItemtofav, deleteFavItem , deleteChartItem } from '../../redux/action';
 import AOS from 'aos';
 AOS.init({
   once: false,
@@ -15,6 +15,7 @@ AOS.init({
 
 const Products = () => {
   const favItems = useSelector(state => state.fav)
+  const chartItems = useSelector(state => state.chart)
   const dispatch = useDispatch();
   const catsref = useRef();
   const route = useNavigate();
@@ -26,6 +27,13 @@ const Products = () => {
       dispatch(deleteFavItem(ele))
     } else {
       dispatch(addItemtofav(ele));
+    }
+  }
+  const handlecart = (ele) => {
+    if (chartItems.some(el => el.id === ele.id)) {
+      dispatch(deleteChartItem(ele))
+    } else {
+      dispatch(addItemtochart(ele));
     }
   }
   useEffect(() => {
@@ -74,7 +82,7 @@ const Products = () => {
                     <img src={ele.img} alt="product" className='mw-100' />
                     <ul className="product_option" onClick={handlepropa}>
                       <li onClick={() => handlefav(ele)} className={ favItems.map(el => el.id === ele.id ? 'favicon': '').join("")}></li>
-                      <li onClick={() => dispatch(addItemtochart(ele))}><FontAwesomeIcon icon={faCartShopping} /></li>
+                      <li onClick={() => handlecart(ele)}><FontAwesomeIcon icon={faCartShopping} /></li>
                     </ul>
                   </div>
                   <div className="product_info">
