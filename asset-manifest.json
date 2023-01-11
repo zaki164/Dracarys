@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dracarys/static/css/main.9067e5a3.css",
-    "main.js": "/Dracarys/static/js/main.5a5dacd3.js",
+    "main.js": "/Dracarys/static/js/main.a3175063.js",
     "static/media/store3.jpg": "/Dracarys/static/media/store3.50dd15420f1905cd67d5.jpg",
     "static/media/insta5.jpg": "/Dracarys/static/media/insta5.6bc7610a76842437c41f.jpg",
     "static/media/insta3.jpg": "/Dracarys/static/media/insta3.717c99b37587decb20c8.jpg",
@@ -45,10 +45,10 @@
     "static/media/services2.svg": "/Dracarys/static/media/services2.22555a9e4c98066ee3524daa3c95975e.svg",
     "index.html": "/Dracarys/index.html",
     "main.9067e5a3.css.map": "/Dracarys/static/css/main.9067e5a3.css.map",
-    "main.5a5dacd3.js.map": "/Dracarys/static/js/main.5a5dacd3.js.map"
+    "main.a3175063.js.map": "/Dracarys/static/js/main.a3175063.js.map"
   },
   "entrypoints": [
     "static/css/main.9067e5a3.css",
-    "static/js/main.5a5dacd3.js"
+    "static/js/main.a3175063.js"
   ]
 }
