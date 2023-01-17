@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { images } from '../../constants';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import './Blog.css';
+import './Blog.scss';
 
 const Blog = () => {
   return (
