@@ -1,5 +1,5 @@
 import { images } from '../../constants';
-import './Landing.css';
+import './Landing.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
