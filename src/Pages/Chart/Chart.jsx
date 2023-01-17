@@ -9,7 +9,7 @@ const Chart = () => {
   const dispatch = useDispatch();
   let totalPrice = chartItems.map(ele => ele.num * ele.price)
   return (
-    <section className="Chart section_padding">
+    <section className="Chart section_padding min-vh-100">
       <h2 className='main_heading'>Cart</h2>
       <Container>
         <Row>

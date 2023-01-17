@@ -61,7 +61,7 @@ const Products = () => {
     })
   }, [])
   return (
-    <section className='products section_padding'>
+    <section className='products section_padding min-vh-100'>
       <h2 className='main_heading'>Our Products</h2>
       <ul className='products_categories flex_center' ref={catsref}>
         <li className='active' data-filter="all">All</li>

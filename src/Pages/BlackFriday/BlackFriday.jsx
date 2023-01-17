@@ -34,7 +34,7 @@ const BlackFriday = () => {
     }, 1000)
   })
   return (
-    <section className='BlackFriday section_padding'>
+    <section className='BlackFriday section_padding min-vh-100'>
       <Container>
         <Row>
           <Col xs={12}>

@@ -31,7 +31,7 @@ const Product = () => {
     favItems.some(ele => ele.id === myp.id) && settogglefav(true) 
   }, [favItems, myp])
   return (
-    <section className='Product section_padding'>
+    <section className='Product section_padding min-vh-100'>
       <Container>
         {
           <Row>

@@ -4,7 +4,7 @@ import './Login.scss';
 const Login = () => {
   const route = useNavigate();
   return (
-    <section className='login section_padding flex_center'>
+    <section className='login section_padding flex_center min-vh-100'>
       <div className="login_cont">
         <h2>Login</h2>
         <p>Enter Login details to get access</p>

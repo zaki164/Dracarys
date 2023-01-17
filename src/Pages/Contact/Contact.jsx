@@ -11,7 +11,7 @@ AOS.init({
 const Contact = () => {
   const route = useNavigate();
   return (
-    <section className='contact'>
+    <section className='contact min-vh-100'>
       <section className='contact_img'></section>
       <main>
         <Container>

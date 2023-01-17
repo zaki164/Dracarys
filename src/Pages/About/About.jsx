@@ -10,7 +10,7 @@ AOS.init({
 const About = () => {
   return (
     <>
-      <section className="about">
+      <section className="about min-vh-100">
         <section className="about_img"></section>
         <Store />
         <main className="about_info">

@@ -10,7 +10,7 @@ const Favourite = () => {
   const favItems = useSelector(state => state.fav);
   const dispatch = useDispatch();
   return (
-    <section className="Favourite section_padding">
+    <section className="Favourite section_padding min-vh-100">
       <h2 className='main_heading'>Favourits</h2>
       <Container>
         <Row>

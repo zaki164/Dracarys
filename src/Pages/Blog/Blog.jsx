@@ -7,7 +7,7 @@ import './Blog.scss';
 
 const Blog = () => {
   return (
-    <section className='blog'>
+    <section className='blog min-vh-100'>
       <section className='blog_img'></section>
       <main >
         <Container>

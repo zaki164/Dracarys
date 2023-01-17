@@ -4,7 +4,7 @@ import './SignUp.scss';
 const SignUp = () => {
   const route = useNavigate();
   return (
-    <section className='signup section_padding flex_center'>
+    <section className='signup section_padding flex_center min-vh-100'>
       <div className="signup_cont">
         <h2>Sign Up</h2>
         <p>Create your account to get full access</p>
