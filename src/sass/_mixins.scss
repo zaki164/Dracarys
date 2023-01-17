@@ -56,6 +56,9 @@
     color: #fff;
     font-size: 60px;
     font-weight: 800;
+    @include media(sm) {
+      font-size: 45px;
+    }
   }
 }
 @mixin custom_input {
