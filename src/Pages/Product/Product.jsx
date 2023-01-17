@@ -7,8 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { Data } from '../../constants';
 import { addItemtofav, addItemtochart, deleteFavItem } from '../../redux/action';
-import './Product.scss';
 import { useEffect } from 'react';
+import './Product.scss';
 
 const Product = () => {
   const favItems =  useSelector(state => state.fav);
