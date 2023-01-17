@@ -1,4 +1,4 @@
-import './FollowInsta.css';
+import './FollowInsta.scss';
 import { images } from '../../constants';
 import { Row } from 'react-bootstrap';
 import { useRef } from 'react';
