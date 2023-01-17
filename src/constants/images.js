@@ -41,7 +41,7 @@ import trend2 from '../assets/trend2.jpg';
 import trend3 from '../assets/trend3.jpg';
 import trend4 from '../assets/trend4.jpg';
 
-export default {
+const images = {
   slide1,
   slide2,
   slide3,
@@ -85,3 +85,5 @@ export default {
   trend3,
   trend4,
 }
+
+export default images;
