@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { images } from '../../constants';
-import './About.css';
+import './About.scss';
 import AOS from 'aos';
 import { Store } from "../../Sections";
 AOS.init({
