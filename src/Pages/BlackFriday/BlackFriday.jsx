@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import './BlackFriday.css';
+import './BlackFriday.scss';
 import { images } from '../../constants';
 import { useEffect, useRef } from 'react';
 
