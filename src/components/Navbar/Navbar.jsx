@@ -6,7 +6,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { useSelector } from 'react-redux';
 import { useRef, useEffect } from 'react';
 
-import './Navbar.css';
+import './Navbar.scss';
 
 
 const Navbar = () => {
