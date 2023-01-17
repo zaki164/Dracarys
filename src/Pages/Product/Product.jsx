@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { Data } from '../../constants';
 import { addItemtofav, addItemtochart, deleteFavItem } from '../../redux/action';
-import './Product.css';
+import './Product.scss';
 import { useEffect } from 'react';
 
 const Product = () => {
