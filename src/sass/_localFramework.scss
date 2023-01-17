@@ -45,4 +45,7 @@
     transform: scale(1.1);
     box-shadow: 0 2px 4px 2px var(--main-color);
   }
+  @include media(sm) {
+    font-size: 35px;
+  }
 }

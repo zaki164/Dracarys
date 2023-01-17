@@ -75,6 +75,10 @@
     outline: none;
     border-color: var(--main-color);
   }
+  @include media(sm) {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
 @mixin NavLinkNewItem($new) {
   position: relative;
