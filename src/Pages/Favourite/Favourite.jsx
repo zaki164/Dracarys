@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addItemtochart, deleteFavItem } from '../../redux/action';
-import './Favourite.css';
+import './Favourite.scss';
 
 const Favourite = () => {
   const favItems = useSelector(state => state.fav);
