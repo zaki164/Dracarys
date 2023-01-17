@@ -54,7 +54,7 @@ const Chart = () => {
               )) : <p className='noItems'>No Items yet</p>
             }
           </Col>
-          <Col xs={{ span: 12, order: 'first' }} md={{ span: 4, order: 'last' }} className="mb-5 mb-md-0">
+          <Col xs={{ span: 12 }} md={{ span: 4 }} className="mb-5 mb-md-0">
             <div className="CartSummary">
               <p className='CartSummary_name'>Cart Summary</p>
               {
