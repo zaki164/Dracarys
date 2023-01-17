@@ -2,7 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { decreaseItemQuantity, deleteChartItem, increaseItemQuantity } from '../../redux/action';
-import './Chart.css';
+import './Chart.scss';
 
 const Chart = () => {
   const chartItems = useSelector(state => state.chart);
