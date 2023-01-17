@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { images } from '../../constants';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import './LatestBlogs.scss';
 
-import './LatestBlogs.css';
 
 const LatestBlogs = () => {
   return (
