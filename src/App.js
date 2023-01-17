@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { About, BlackFriday, Blog, Chart, Contact, Favourite, Home, Login, Product, Products, SignUp } from './Pages';
 import { Footer, Navbar, Summary } from './components';
-import './App.scss';
+import './sass/App.scss';
 
 import AOS from 'aos';
 AOS.init({
