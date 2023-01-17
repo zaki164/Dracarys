@@ -17,6 +17,7 @@
 body {
   font-family: var(--font-base) !important; 
   background-color: var(--alt-color);
+  min-height: 100vh;
 }
 a {
   text-decoration: none !important;
