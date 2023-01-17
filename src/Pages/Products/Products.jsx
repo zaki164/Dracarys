@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react';
 import mixitup from 'mixitup';
 import { Data } from '../../constants';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import './Products.css';
+import './Products.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItemtochart, addItemtofav, deleteFavItem , deleteChartItem } from '../../redux/action';
 import AOS from 'aos';
