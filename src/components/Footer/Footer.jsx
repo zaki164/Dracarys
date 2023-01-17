@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import './Footer.css';
+import './Footer.scss';
 import { faInstagram, faFacebookF, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
