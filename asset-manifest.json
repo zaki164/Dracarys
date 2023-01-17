@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Dracarys/static/css/main.a8263745.css",
-    "main.js": "/Dracarys/static/js/main.c92fde82.js",
+    "main.css": "/Dracarys/static/css/main.5d192381.css",
+    "main.js": "/Dracarys/static/js/main.5bff0eee.js",
     "static/css/765.34b5517e.chunk.css": "/Dracarys/static/css/765.34b5517e.chunk.css",
-    "static/js/765.cedb29cf.chunk.js": "/Dracarys/static/js/765.cedb29cf.chunk.js",
+    "static/js/765.82482ed2.chunk.js": "/Dracarys/static/js/765.82482ed2.chunk.js",
     "static/css/587.5e65d918.chunk.css": "/Dracarys/static/css/587.5e65d918.chunk.css",
     "static/js/587.ce708b66.chunk.js": "/Dracarys/static/js/587.ce708b66.chunk.js",
     "static/css/184.42c4fa5f.chunk.css": "/Dracarys/static/css/184.42c4fa5f.chunk.css",
-    "static/js/184.fbb024fb.chunk.js": "/Dracarys/static/js/184.fbb024fb.chunk.js",
+    "static/js/184.90da50e0.chunk.js": "/Dracarys/static/js/184.90da50e0.chunk.js",
     "static/css/520.488f51dd.chunk.css": "/Dracarys/static/css/520.488f51dd.chunk.css",
     "static/js/520.f83a8ffe.chunk.js": "/Dracarys/static/js/520.f83a8ffe.chunk.js",
     "static/css/686.9313daf8.chunk.css": "/Dracarys/static/css/686.9313daf8.chunk.css",
@@ -25,7 +25,7 @@
     "static/css/598.03f80ee7.chunk.css": "/Dracarys/static/css/598.03f80ee7.chunk.css",
     "static/js/598.8710a4b0.chunk.js": "/Dracarys/static/js/598.8710a4b0.chunk.js",
     "static/css/319.5afacb51.chunk.css": "/Dracarys/static/css/319.5afacb51.chunk.css",
-    "static/js/319.d434b828.chunk.js": "/Dracarys/static/js/319.d434b828.chunk.js",
+    "static/js/319.f17706c6.chunk.js": "/Dracarys/static/js/319.f17706c6.chunk.js",
     "static/js/336.8f0746b5.chunk.js": "/Dracarys/static/js/336.8f0746b5.chunk.js",
     "static/js/127.7d666309.chunk.js": "/Dracarys/static/js/127.7d666309.chunk.js",
     "static/media/store3.jpg": "/Dracarys/static/media/store3.50dd15420f1905cd67d5.jpg",
@@ -70,14 +70,14 @@
     "static/media/services3.svg": "/Dracarys/static/media/services3.62fde65f3dc8f559d2827bec5891fc65.svg",
     "static/media/services2.svg": "/Dracarys/static/media/services2.22555a9e4c98066ee3524daa3c95975e.svg",
     "index.html": "/Dracarys/index.html",
-    "main.a8263745.css.map": "/Dracarys/static/css/main.a8263745.css.map",
-    "main.c92fde82.js.map": "/Dracarys/static/js/main.c92fde82.js.map",
+    "main.5d192381.css.map": "/Dracarys/static/css/main.5d192381.css.map",
+    "main.5bff0eee.js.map": "/Dracarys/static/js/main.5bff0eee.js.map",
     "765.34b5517e.chunk.css.map": "/Dracarys/static/css/765.34b5517e.chunk.css.map",
-    "765.cedb29cf.chunk.js.map": "/Dracarys/static/js/765.cedb29cf.chunk.js.map",
+    "765.82482ed2.chunk.js.map": "/Dracarys/static/js/765.82482ed2.chunk.js.map",
     "587.5e65d918.chunk.css.map": "/Dracarys/static/css/587.5e65d918.chunk.css.map",
     "587.ce708b66.chunk.js.map": "/Dracarys/static/js/587.ce708b66.chunk.js.map",
     "184.42c4fa5f.chunk.css.map": "/Dracarys/static/css/184.42c4fa5f.chunk.css.map",
-    "184.fbb024fb.chunk.js.map": "/Dracarys/static/js/184.fbb024fb.chunk.js.map",
+    "184.90da50e0.chunk.js.map": "/Dracarys/static/js/184.90da50e0.chunk.js.map",
     "520.488f51dd.chunk.css.map": "/Dracarys/static/css/520.488f51dd.chunk.css.map",
     "520.f83a8ffe.chunk.js.map": "/Dracarys/static/js/520.f83a8ffe.chunk.js.map",
     "686.9313daf8.chunk.css.map": "/Dracarys/static/css/686.9313daf8.chunk.css.map",
@@ -95,12 +95,12 @@
     "598.03f80ee7.chunk.css.map": "/Dracarys/static/css/598.03f80ee7.chunk.css.map",
     "598.8710a4b0.chunk.js.map": "/Dracarys/static/js/598.8710a4b0.chunk.js.map",
     "319.5afacb51.chunk.css.map": "/Dracarys/static/css/319.5afacb51.chunk.css.map",
-    "319.d434b828.chunk.js.map": "/Dracarys/static/js/319.d434b828.chunk.js.map",
+    "319.f17706c6.chunk.js.map": "/Dracarys/static/js/319.f17706c6.chunk.js.map",
     "336.8f0746b5.chunk.js.map": "/Dracarys/static/js/336.8f0746b5.chunk.js.map",
     "127.7d666309.chunk.js.map": "/Dracarys/static/js/127.7d666309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8263745.css",
-    "static/js/main.c92fde82.js"
+    "static/css/main.5d192381.css",
+    "static/js/main.5bff0eee.js"
   ]
 }
