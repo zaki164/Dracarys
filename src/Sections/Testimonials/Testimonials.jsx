@@ -1,14 +1,10 @@
 import { images } from '../../constants';
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import './Testimonials.scss';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { Pagination, Navigation } from "swiper";
-
-import './Testimonials.css';
-
 
 const Testimonials = () => {
   return (

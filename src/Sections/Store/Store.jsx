@@ -1,4 +1,4 @@
-import './Store.css';
+import './Store.scss';
 
 const Store = () => {
   return (
