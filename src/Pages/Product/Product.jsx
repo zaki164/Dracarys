@@ -29,7 +29,7 @@ const Product = () => {
   }
   useEffect(() => {
     favItems.some(ele => ele.id === myp.id) && settogglefav(true) 
-  }, [])
+  }, [favItems, myp])
   return (
     <section className='Product section_padding'>
       <Container>
