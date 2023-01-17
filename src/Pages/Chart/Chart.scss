@@ -113,6 +113,9 @@
           &:hover:not(.num) {
             box-shadow: 0 0 8px #999;
           }
+          @include media(sm) {
+            font-size: 22px;
+          }
           &.num {
             background-color: var(--main-color);
             color: #fff;
@@ -139,6 +142,9 @@
       }
       .confirm {
         font-size: 19px;
+        @include media(sm) {
+          font-size: 16px;
+        }
         .Remove {
           border: 1px solid #ccc;
           color: var(--main-color);
@@ -153,6 +159,9 @@
             background-color: var(--main-color);
             color: #fff;
             border-color: var(--main-color);
+          }
+          @include media(sm) {
+            padding: 10px 15px;
           }
         }
         .buy {
@@ -174,6 +183,9 @@
     font-size: 23px;
     font-weight: 700;
     padding: 21px;
+    @include media(sm) {
+      font-size: 17px;
+    }
   }
   .CartSummary {
     padding: 20px;
@@ -188,6 +200,9 @@
       color: var(--main-color);
       padding-bottom: 10px;
       border-bottom: 1px solid #ccc;
+      @include media(sm) {
+        font-size: 21px;
+      }
     }
     .CartSummary_item {
       width: 100%;
@@ -199,6 +214,9 @@
       &:last-of-type {
         border-bottom: 1px solid #ccc;
         padding-bottom: 15px;
+      }
+      @include media(sm) {
+        font-size: 16px;
       }
       .CartSummary_item_name {
         color: #666;
@@ -219,6 +237,9 @@
       }
       .CartSummary_total_number {
         color: var(--main-color);
+      }
+      @include media(sm) {
+        font-size: 20px;
       }
     }
   }
