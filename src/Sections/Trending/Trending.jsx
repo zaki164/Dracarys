@@ -1,19 +1,15 @@
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
-
 import { Navigation, Autoplay } from "swiper";
-
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItemtochart, addItemtofav, deleteFavItem, deleteChartItem } from '../../redux/action';
 import { Data } from '../../constants';
-import './Trending.css';
+import './Trending.scss';
 
 const trendarr = Data.filter(ele => ele.id >= 38 && ele.id <= 41)
 
