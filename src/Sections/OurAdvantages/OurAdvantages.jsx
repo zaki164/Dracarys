@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import './OurAdvantages.css';
+import './OurAdvantages.scss';
 import { images } from '../../constants';
 
 const OurAdvantages = () => {
