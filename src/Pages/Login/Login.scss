@@ -2,8 +2,8 @@
 .login {
   padding-top: 80px !important;
   .login_cont{
-    padding: 50px 40px;
     width: 40%;
+    padding: 50px 40px;
     box-shadow: 0px 0px 30px #0d0c0d33;
     @include media(lg) {
       width: 50%;
@@ -13,6 +13,8 @@
     }
     @include media(sm) {
       width: 80%;
+      padding: 0 40px;
+      box-shadow: none;
     }
     @include media(xs) {
       width: 100%;
@@ -22,21 +24,33 @@
       text-align: center;
       font-size: 26px;
       font-weight: 600;
+      @include media(sm) {
+        font-size: 23px;
+      }
     }
     h2 + p {
       text-align: center;
       font-size: 17px;
       color: #666;
       margin: 20px 0 30px;
+      @include media(sm) {
+        margin-bottom: 5px;
+      }
     }
     form {
       margin-top: 30px;
+      @include media(sm) {
+        margin-top: 5px;
+      }
       label {
         font-size: 17px;
         font-weight: 500;
         color: #333;
         margin: 30px 0 10px;
         cursor: pointer;
+        @include media(sm) {
+          font-size: 15px;
+        }
       }
       input:not(#keeplog) {
         @include custom_input;
@@ -44,9 +58,6 @@
       }
       .log_info {
         margin: 20px 0;
-        @include media(sm) {
-          margin-bottom: 40px;
-        }
         @include media(xs) {
           gap: 20px;
           flex-direction: column;
