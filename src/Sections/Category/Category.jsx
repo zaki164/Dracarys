@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import './Category.css';
+import './Category.scss';
 import { images } from '../../constants';
 import { Link, useNavigate } from 'react-router-dom';
 import AOS from 'aos';
