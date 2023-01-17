@@ -1,4 +1,5 @@
-import { Category, FollowInsta, Landing, LatestBlogs, OurAdvantages, Testimonials, Trending } from "../../Sections";
+import { Category, Landing, OurAdvantages, Testimonials, Trending } from "../../Sections";
+// import { FollowInsta, LatestBlogs } from "../../Sections";
 
 const Home = () => {
   return (
