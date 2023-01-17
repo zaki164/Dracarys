@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Summary.css';
+import './Summary.scss';
 
 const Summary = () => {
   const summref = useRef();
