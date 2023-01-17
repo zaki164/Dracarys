@@ -1,0 +1,19 @@
+@keyframes imganime {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes flash {
+  from {
+    color: var(--main-color);
+  }
+  to {
+    color: #fff;
+  }
+}
