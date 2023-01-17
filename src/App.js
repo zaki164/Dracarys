@@ -1,9 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min";
 import 'aos/dist/aos.css';
 import './sass/App.scss';
 import { HashRouter as Router } from 'react-router-dom';
-
 import AOS from 'aos';
 import Layout from "./Layout/Layout";
 AOS.init({
