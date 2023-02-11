@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
 import './Contact.scss';
 import AOS from 'aos';
 AOS.init({
@@ -9,7 +9,17 @@ AOS.init({
 });
 
 const Contact = () => {
-  const route = useNavigate();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7fme2pt', 'template_hgxnupl', e.target, '7QPSZq9EytY-ixOtW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }
   return (
     <section className='contact min-vh-100'>
       <section className='contact_img'></section>
@@ -19,10 +29,12 @@ const Contact = () => {
             <Col xs={12} md={6} className="pe-0 col" data-aos="fade-up">
               <div className="contact_message">
                 <h4>Send Us A Message</h4>
-                <form action="#">
-                  <input type="text" placeholder='Your Email Address' />
-                  <textarea name="Help" cols="30" rows="10" placeholder='How Can We Help ?'></textarea>
-                  <button className='custom_button w-100' onClick={() => route('/')}>Submit</button>
+                <form onSubmit={sendEmail}>
+                  <input type="text" placeholder='Your Name' name="name"/>
+                  <input type="email" placeholder='Your Email Address' name="email"/>
+                  <input type="text" placeholder='Subject' name="subject"/>
+                  <textarea name="message" cols="30" rows="10" placeholder='How Can We Help ?'></textarea>
+                  <button className='custom_button w-100' type='submit'>Submit</button>
                 </form>
               </div>
             </Col>
