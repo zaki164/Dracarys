@@ -3,7 +3,6 @@ import './Profile.scss'
 
 const Profile = () => {
   const { logout, user } = useAuth0();
-
   return (
     <section className='login section_padding d-flex justify-content-center min-vh-100'>
       <figure className="login_cont">

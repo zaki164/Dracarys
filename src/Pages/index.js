@@ -7,8 +7,6 @@ import Favourite from './Favourite/Favourite';
 import Products from './Products/Products';
 import Product from './Product/Product';
 import BlackFriday from './BlackFriday/BlackFriday';
-import Login from './Login/Login';
-import SignUp from './SignUp/SignUp';
 import Profile from './Profile/Profile';
 
 export {
@@ -21,7 +19,5 @@ export {
   Products,
   Product,
   BlackFriday,
-  Login,
-  SignUp,
   Profile,
 }
