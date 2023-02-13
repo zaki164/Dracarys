@@ -1,0 +1,51 @@
+@import '../../sass/mixins';
+.login {
+  padding-top: 80px !important;
+  .login_cont {
+    width: 70%;
+    padding: 50px 40px;
+    box-shadow: 0px 0px 30px #0d0c0d33;
+    max-height: 400px;
+    margin-top: 5%;
+    display: flex;
+    @include media(md) {
+      width: 80%;
+    }
+    @include media(sm) {
+      width: 90%;
+      padding: 0 40px;
+      box-shadow: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    @include media(xs) {
+      width: 100%;
+    }
+    .profile_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .profile_info {
+      padding: 15px 15px 15px 20px;
+      color: #222;
+      @include media(sm) {
+        padding: 15px;
+      }
+      p {
+        font-size: 18px;
+        @include media(sm) {
+          font-size: 14px;
+        }
+        span {
+          font-weight: bold;
+        }
+      }
+      .logout {
+        background-color: var(--bg-dark);
+        color: var(--main-color);
+      }
+    }
+  }
+}

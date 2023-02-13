@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { faMagnifyingGlass, faUser, faCartShopping} from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faMagnifyingGlass, faUser, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from 'react-redux';
 import { useRef, useEffect } from 'react';
-
+import { useAuth0 } from '@auth0/auth0-react';
 import './Navbar.scss';
 
-
 const Navbar = () => {
+  const { loginWithPopup, user, isLoading } = useAuth0();
   const favItemsLength = useSelector(state => state.fav.length);
   const chartItemsLength = useSelector(state => state.chart.length);
   const headerref = useRef();
@@ -81,15 +80,25 @@ const Navbar = () => {
             <NavLink exact="true" to='/Blog'>Blog</NavLink>
             <NavLink exact="true" to='/About'>About</NavLink>
             <NavLink exact="true" to='/Contact'>Contact</NavLink>
+            {!isLoading && !user && (
+              <div className='auth d-inline-block'>
+                <button className='custom_button log me-2 ms-3' onClick={() => loginWithPopup()}>Log in</button>
+                <button className='custom_button sign' onClick={() => loginWithPopup({
+                  appState: {
+                    returnTo: window.location.origin,
+                  },
+                  authorizationParams: {
+                    screen_hint: "signup",
+                  },
+                })}>Sign up</button>
+              </div>
+            )}
           </div>
           <div className="info d-flex mt-2">
             <div className='search' ref={searchref} onClick={handlesearch}>
               <input type="text" placeholder='Search...' name='search' ref={inputref} onClick={stopPropa} />
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </div>
-            <NavLink exact="true" to='/Login'>
-              <FontAwesomeIcon icon={faUser} />
-            </NavLink>
             <NavLink exact="true" to='/Favourite'>
               <span className='number'>{favItemsLength}</span>
               <FontAwesomeIcon icon={faHeart} />
@@ -98,6 +107,7 @@ const Navbar = () => {
               <span className='number'>{chartItemsLength}</span>
               <FontAwesomeIcon icon={faCartShopping} />
             </NavLink>
+            {user && <NavLink exact="true" to='/Profile' className="profile"><img src={user.picture} alt="profile img" /></NavLink>}
             <div className="toggle d-lg-none" ref={toggleref} onClick={handlenav}>
               <span></span>
               <span></span>

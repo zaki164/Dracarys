@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 import { CompLoader } from '../components';
 
 const Home = React.lazy(() => import("../Pages/Home/Home"));
@@ -11,10 +12,14 @@ const Contact = React.lazy(() => import("../Pages/Contact/Contact"));
 const Favourite = React.lazy(() => import("../Pages/Favourite/Favourite"));
 const Login = React.lazy(() => import("../Pages/Login/Login"));
 const SignUp = React.lazy(() => import("../Pages/SignUp/SignUp"));
+const Profile = React.lazy(() => import("../Pages/Profile/Profile"));
 const Products = React.lazy(() => import("../Pages/Products/Products"));
 const Product = React.lazy(() => import("../Pages/Product/Product"));
 
 const Router = () => {
+  const { isLoading, error, user } = useAuth0();
+  error && <h1>error...something went wrong... </h1>
+  !error && isLoading && <CompLoader />
   return (
     <Suspense fallback={<CompLoader />}>
       <Routes>
@@ -27,6 +32,7 @@ const Router = () => {
         <Route path='/Favourite' element={<Favourite />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/Profile' element={!user ? <Navigate replace to={"/"} /> : <Profile /> } />
         <Route path='/Products' element={<Products />} />
         <Route path='/Products/:id' element={<Product />} />
       </Routes>
