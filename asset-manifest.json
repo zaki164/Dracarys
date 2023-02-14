@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dracarys/static/css/main.18c91f0c.css",
-    "main.js": "/Dracarys/static/js/main.5e77d59d.js",
+    "main.js": "/Dracarys/static/js/main.4aa67f10.js",
     "static/css/765.34b5517e.chunk.css": "/Dracarys/static/css/765.34b5517e.chunk.css",
     "static/js/765.fbfcc8cc.chunk.js": "/Dracarys/static/js/765.fbfcc8cc.chunk.js",
     "static/css/587.5e65d918.chunk.css": "/Dracarys/static/css/587.5e65d918.chunk.css",
@@ -70,7 +70,7 @@
     "static/media/services2.svg": "/Dracarys/static/media/services2.22555a9e4c98066ee3524daa3c95975e.svg",
     "index.html": "/Dracarys/index.html",
     "main.18c91f0c.css.map": "/Dracarys/static/css/main.18c91f0c.css.map",
-    "main.5e77d59d.js.map": "/Dracarys/static/js/main.5e77d59d.js.map",
+    "main.4aa67f10.js.map": "/Dracarys/static/js/main.4aa67f10.js.map",
     "765.34b5517e.chunk.css.map": "/Dracarys/static/css/765.34b5517e.chunk.css.map",
     "765.fbfcc8cc.chunk.js.map": "/Dracarys/static/js/765.fbfcc8cc.chunk.js.map",
     "587.5e65d918.chunk.css.map": "/Dracarys/static/css/587.5e65d918.chunk.css.map",
@@ -99,6 +99,6 @@
   },
   "entrypoints": [
     "static/css/main.18c91f0c.css",
-    "static/js/main.5e77d59d.js"
+    "static/js/main.4aa67f10.js"
   ]
 }
