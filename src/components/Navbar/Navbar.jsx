@@ -84,9 +84,6 @@ const Navbar = () => {
               <div className='auth d-inline-block'>
                 <button className='custom_button log me-2 ms-3 ms-lg-1' onClick={() => loginWithPopup()}>Log in</button>
                 <button className='custom_button sign' onClick={() => loginWithPopup({
-                  appState: {
-                    returnTo: window.location.origin,
-                  },
                   authorizationParams: {
                     screen_hint: "signup",
                   },
