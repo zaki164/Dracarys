@@ -1,3 +1,4 @@
+@import '../../sass/mixins';
 .summary {
   background-color: var(--bg-dark2);
   color: #fff;
@@ -12,11 +13,16 @@
     user-select: none;
     transition: var(--main-transition);
     width: 100%;
+    @include media(sm) {
+      font-size: 13px;
+    }
     &.active {
       margin-top: 0;
     }
-    a {
+    span, a {
       color: var(--main-color) !important;
+    }
+    a {
       cursor: pointer;
     }
   }
