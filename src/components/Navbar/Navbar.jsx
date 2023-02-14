@@ -8,7 +8,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import './Navbar.scss';
 
 const Navbar = () => {
-  const { loginWithPopup, user, isLoading } = useAuth0();
+  const { loginWithPopup, user } = useAuth0();
   const favItemsLength = useSelector(state => state.fav.length);
   const chartItemsLength = useSelector(state => state.chart.length);
   const headerref = useRef();
@@ -72,7 +72,7 @@ const Navbar = () => {
     <header ref={headerref}>
       <Container className='d-flex align-items-center position-relative'>
         <NavLink exact="true" to='/' className="logo">Dracarys</NavLink>
-        <nav className='flex_between flex-grow-1'>
+        <nav className='d-flex justify-content-evenly align-items-center flex-grow-1'>
           <div className="pages mt-2" ref={navref}>
             <NavLink exact="true" to='/'>Home</NavLink>
             <NavLink exact="true" to='/Products'>Products</NavLink>
@@ -80,9 +80,9 @@ const Navbar = () => {
             <NavLink exact="true" to='/Blog'>Blog</NavLink>
             <NavLink exact="true" to='/About'>About</NavLink>
             <NavLink exact="true" to='/Contact'>Contact</NavLink>
-            {!isLoading && !user && (
+            {!user && (
               <div className='auth d-inline-block'>
-                <button className='custom_button log me-2 ms-3' onClick={() => loginWithPopup()}>Log in</button>
+                <button className='custom_button log me-2 ms-3 ms-lg-1' onClick={() => loginWithPopup()}>Log in</button>
                 <button className='custom_button sign' onClick={() => loginWithPopup({
                   appState: {
                     returnTo: window.location.origin,
